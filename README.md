@@ -1,6 +1,10 @@
-# Ship It Toolkit
+<p align="center">
+  <img src=".github/assets/banner.webp" alt="Ship It Toolkit: project management best practices for agents on GitHub" width="100%">
+</p>
 
-**From idea to release, one issue at a time.**
+<h1 align="center">Ship It Toolkit</h1>
+
+<p align="center"><strong>From idea to release, one issue at a time.</strong></p>
 
 A small, no-nonsense project workflow for solo developers (or pairs) who build with [Claude Code](https://docs.claude.com/en/docs/claude-code). It runs on what GitHub already gives you — Issues, Projects, Milestones and their built-in automations — plus one Claude Code skill, `github-flow`, that does the paperwork.
 
