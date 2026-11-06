@@ -6,6 +6,23 @@
 
 <p align="center"><strong>From idea to release, one issue at a time.</strong></p>
 
+<p align="center">
+  <a href="https://github.com/MartinMrnn/ship-it-toolkit/releases"><img src="https://img.shields.io/github/v/release/MartinMrnn/ship-it-toolkit?style=for-the-badge&label=release&color=E8452C&labelColor=1F3A5F" alt="Latest release"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/MartinMrnn/ship-it-toolkit?style=for-the-badge&color=F4E4C1&labelColor=1F3A5F" alt="MIT license"></a>
+  <a href="https://docs.claude.com/en/docs/claude-code/skills"><img src="https://img.shields.io/badge/Claude_Code-skill-E8452C?style=for-the-badge&logo=claude&logoColor=white&labelColor=1F3A5F" alt="Claude Code skill"></a>
+  <a href="https://docs.github.com/en/issues/planning-and-tracking-with-projects"><img src="https://img.shields.io/badge/built_on-GitHub_Projects-F4E4C1?style=for-the-badge&logo=github&logoColor=white&labelColor=1F3A5F" alt="Built on GitHub Projects"></a>
+  <a href="https://github.com/MartinMrnn/ship-it-toolkit/stargazers"><img src="https://img.shields.io/github/stars/MartinMrnn/ship-it-toolkit?style=for-the-badge&color=E8452C&labelColor=1F3A5F" alt="GitHub stars"></a>
+</p>
+
+<p align="center">
+  <a href="#install-once-per-machine">Install</a> ·
+  <a href="#the-flow">The flow</a> ·
+  <a href="#day-to-day">Day to day</a> ·
+  <a href="#license">License</a>
+</p>
+
+---
+
 A small, no-nonsense project workflow for solo developers (or pairs) who build with [Claude Code](https://docs.claude.com/en/docs/claude-code). It runs on what GitHub already gives you — Issues, Projects, Milestones and their built-in automations — plus one Claude Code skill, `github-flow`, that does the paperwork.
 
 - **Issues** are your backlog.
