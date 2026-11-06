@@ -100,7 +100,7 @@ Manual steps: prioritise, move to `Ready` and set a milestone whenever you want.
 1. `gh issue view N --json title,body,labels,milestone,state,url`.
    - Closed issue: stop.
    - No milestone: say so, without blocking.
-2. `git status --porcelain` must be empty. Otherwise stop and ask what to do with the changes in progress.
+2. `git status --porcelain` must be empty. Otherwise stop and ask what to do with the changes in progress. Then `git switch <default branch> && git pull --prune`.
 3. `set-field.sh "<Project>" <url> Status Spec`.
 4. `gh issue develop N --name N-<3-4 words of the title in kebab-case> --checkout`. This links the branch to the issue.
 5. Invoke `superpowers:brainstorming` with the issue (title and body) as the brief.
@@ -128,7 +128,7 @@ Manual steps: review and merge the PR (give its link). The issue will move to `D
 ## release vX.Y.Z
 
 If the tag already exists (`gh release view vX.Y.Z`), stop: the version is published.
-If a merged PR is called "Release vX.Y.Z" (`gh pr list --state merged --search "Release vX.Y.Z in:title"`), go to phase 2. Otherwise start with phase 1.
+If a merged PR is called "Release vX.Y.Z" (`gh pr list --state merged --limit 100 --json number,title --jq '.[]|select(.title=="Release vX.Y.Z")|.number'`), go to phase 2. Otherwise start with phase 1. Do not use `--search` here: the search index lags a few seconds behind a merge.
 
 **Phase 1: prepare**
 
